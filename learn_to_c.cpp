@@ -1,14 +1,20 @@
 #include <iostream>
+using namespace std;
 
 int main() {
-  // December 22 2025
-  std::cout << "Hello World!\n";
+  cout << "Hello World!" << endl;
 
-  std::cout << "\n|￣￣￣￣￣￣￣￣￣|";
-  std::cout << "\n|   I want to eat  |";
-  std::cout << "\n|     your face.   |";
-  std::cout << "\n|__________________|";
-  std::cout << "\n(\\__/)  ||";
-  std::cout << "\n(•ㅅ•) ||";
-  std::cout << "\n/ 　 づ";
+  cout << "|￣￣￣￣￣￣￣￣￣|" << endl;
+  cout << "|   I want to eat  |" << endl;
+  cout << "|     your face.   |" << endl;
+  cout << "|__________________|" << endl;
+  cout << "(\\__/)  ||" << endl;
+  cout << "(•ㅅ•) ||" << endl;
+  cout << "/ 　 づ" << endl;
+
+  return 0;
 }
+
+// how to run code
+// `g++ learn_to_c.cpp -o ltc`
+// `./ltc`
