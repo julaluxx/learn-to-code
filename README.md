@@ -1,4 +1,4 @@
 # learn-to-code
 I'm just learning.  
 
-<img width="320" height="119" alt="image" src="https://github.com/user-attachments/assets/2ce871d1-e7c6-430d-86dc-0e21e036ce5c" />
+<img width="1000" height="300" alt="image" src="https://github.com/user-attachments/assets/8b3f1f62-9b8a-4988-93c4-6d79c8764799" />  
