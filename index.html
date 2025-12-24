@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Jula Learner</title>
 </head>
 <body>
-    <h1>It's my time to shine!</h1>
-    <p id="myParagraph"></p>
+    <header>
+        <h1>It's my time to shine!</h1>
+    </header>
+
+    <main>
+        <p id="myParagraph"></p>
+
+        <form class="container">
+            <label for="username">Name: </label>
+            <input type="text" id="username" name="username">
+            <br>
+            
+            <label for="user-age">Age: </label>
+            <input type="number" id="user-age" name="user-age">
+            <br>
+            
+            <label for="passcode">Are you alive?: </label>
+            <input type="text" id="passcode" name="passcode">
+            <br>
+            
+            <button type="submit" id="submit-button">submit</button>
+        </form>
+    </main>
+
     <script src="just_script.js"></script>
 </body>
 </html>
