@@ -32,6 +32,16 @@ int main() {
     cout << "You do not belong here, please leave." << endl;
   }
 
+  cout << "Let's count 1 to 10." << endl;
+  for (int i = 1; i <= 10; i++){
+    cout << i << " ";
+  }
+  // int i = 1;
+  // while (i <= 10){
+  //   cout << i << " ";
+  //   i++;
+  // }
+
   return 0;
 }
 
