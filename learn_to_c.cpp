@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+int birthYearCal(int age){
+  return 2025 - age;
+}
+
 int main() {
   cout << "Hello World!" << endl;
 
@@ -19,7 +23,7 @@ int main() {
   if (age >= 18){
     cout << "￣￣￣￣￣￣￣￣￣￣￣" << endl;
     cout << "   My name is " << name << endl;
-    cout << "   I am " << age <<" years old." << endl;
+    cout << "   I am " << age <<" years old. Born in " << birthYearCal(age) << endl;
     cout << "   My gpa is " << gpa << endl;
     cout << "   My blood type is " << bloodType << endl;
     cout << "______________________" << endl;
