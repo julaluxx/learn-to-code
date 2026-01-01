@@ -1,9 +1,24 @@
+const myParagraph = document.getElementById("myParagraph");
+const usernameInput = document.getElementById("username");
+const passphraseInput = document.getElementById("passphrase");
+const submitBtn = document.getElementById("submit-button");
+const successContainer = document.getElementById("success");
+const errorContainer = document.getElementById("error");
+const successMsg = document.getElementById("success-msg");
+const errorMsg = document.getElementById("error-msg");
+
 console.log("Hello World!");
 
-document.getElementById("myParagraph").innerHTML = "And I like to learn.";
+submitBtn.addEventListener("click", () => {
+  const username = usernameInput.value;
+  const isCorrect = passphraseInput.value === "lalalalalalala";
 
-const submit_btn = document.getElementById("submit-button");
+  successContainer.style.display = isCorrect ? "block" : "none";
+  errorContainer.style.display = isCorrect ? "none" : "block";
 
-submit_btn.addEventListener("click", () => {
-  window.alert("Submitted!");
+  if (isCorrect) {
+    successMsg.textContent = `Welcome to my world, ${username}`;
+  } else {
+    errorMsg.textContent = `How are you today, ${username}`;
+  }
 });
