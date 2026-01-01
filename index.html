@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Jula Learner</title>
 </head>
+
 <body>
     <header>
         <h1>It's my time to shine!</h1>
     </header>
 
-    <main>
+    <main id="login">
         <p id="myParagraph"></p>
 
         <form class="container">
             <label for="username">Name: </label>
             <input type="text" id="username" name="username">
             <br>
-            
+
             <label for="user-age">Age: </label>
             <input type="number" id="user-age" name="user-age">
             <br>
-            
+
             <label for="passphrase">Are you alive?: </label>
             <input type="text" id="passphrase" name="passphrase">
             <br>
-            
+
             <button type="submit" id="submit-button">submit</button>
         </form>
+
     </main>
+
+    <div class="container hidden" id="output">
+        <p id="output-text"></p>
+    </div>
 
     <script src="just_script.js"></script>
 </body>
+
 </html>

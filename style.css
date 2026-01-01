@@ -10,6 +10,10 @@
     --card-bg: #000000;
 }
 
+.hidden {
+    display: none;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

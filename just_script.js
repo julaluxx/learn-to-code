@@ -1,24 +1,23 @@
-const myParagraph = document.getElementById("myParagraph");
+const loginContainer = document.getElementById("login");
 const usernameInput = document.getElementById("username");
 const passphraseInput = document.getElementById("passphrase");
 const submitBtn = document.getElementById("submit-button");
-const successContainer = document.getElementById("success");
-const errorContainer = document.getElementById("error");
-const successMsg = document.getElementById("success-msg");
-const errorMsg = document.getElementById("error-msg");
+const output = document.getElementById("output");
+const outputText = document.getElementById("output-text");
 
 console.log("Hello World!");
 
-submitBtn.addEventListener("click", () => {
+submitBtn.addEventListener("click", (event) => {
+  event.preventDefault();
   const username = usernameInput.value;
-  const isCorrect = passphraseInput.value === "lalalalalalala";
+  const isCorrect = passphraseInput.value === "lalala";
 
-  successContainer.style.display = isCorrect ? "block" : "none";
-  errorContainer.style.display = isCorrect ? "none" : "block";
+  output.classList.remove("hidden");
 
   if (isCorrect) {
-    successMsg.textContent = `Welcome to my world, ${username}`;
+    loginContainer.style.display = "none";
+    outputText.textContent = `Welcome to my world, ${username}`;
   } else {
-    errorMsg.textContent = `How are you today, ${username}`;
+    outputText.textContent = `How are you today, ${username}`;
   }
 });
