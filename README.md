@@ -5,5 +5,5 @@ I'm just learning.
 
 # How to run  
 ## C++  
-`g++ learn_to_c.cpp -o ltc`  
-`./ltc`  
+`g++ {file name}.cpp -o {binary file name}`  
+`./{binary file name}`  
